@@ -51,7 +51,7 @@ Settings
   (Default: ``True``)
 
 * ``NEW_RELIC_EXTENSIONS_ATTRIBUTES``: This is how you specify what attributes
-  of the ``HttpRequest`` instance you care about.  This should be a ``dict``.
+  of the Django ``HttpRequest`` instance you care about.  This should be a ``dict``.
   Please see below for examples.
 
 Examples
@@ -70,7 +70,9 @@ Examples
 
 This will log the user's username under the key of ``Django username`` and so
 on.  If a variable is callable (like ``is_secure`` above), it will be called.
-If it doesn't exist, it will silently die (unless you have debug on).
+If it doesn't exist, it will silently die (unless you have debug on). Find a 
+complete list of ``HttpRequest`` attributes that you can log `here
+<https://docs.djangoproject.com/en/dev/ref/request-response/#httprequest-objects>`_.
 
 License
 -------
