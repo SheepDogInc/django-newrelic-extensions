@@ -1,4 +1,4 @@
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 description = 'New Relic extensions for Django'
@@ -14,5 +14,5 @@ setup(
     long_description=long_desc,
     author='SheepDogInc',
     author_email='development@sheepdoginc.ca',
-    packages=['newrelicextensions'],
+    packages=find_packages()
 )
