@@ -21,9 +21,6 @@ Or from Github:
 
     $ pip install -e git://github.com/sheepdoginc/django-newrelic-extensions.git#egg=django-newrelic-extensions
 
-**Note**: The package hasn't been published to PyPI yet.  Installing via
-Github is recommended.
-
 Add the middleware class to your ``MIDDLEWARE_CLASSES``:
 
 ::
@@ -70,9 +67,15 @@ Examples
 
 This will log the user's username under the key of ``Django username`` and so
 on.  If a variable is callable (like ``is_secure`` above), it will be called.
-If it doesn't exist, it will silently die (unless you have debug on). Find a 
-complete list of ``HttpRequest`` attributes that you can log `here
+If it doesn't exist, it will silently die (unless you have debug on).
+
+For a list of examples attributes that you can log, see the `HttpRequest docs
 <https://docs.djangoproject.com/en/dev/ref/request-response/#httprequest-objects>`_.
+
+To learn more about New Relic's Python integration, please see their `Python
+tips and tricks <https://newrelic.com/docs/python/python-tips-and-tricks>`_
+page.
+
 
 License
 -------
