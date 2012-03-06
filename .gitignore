@@ -1,0 +1,4 @@
+dist
+build
+django_newrelic_extensions.egg-info
+*.pyc
